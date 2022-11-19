@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>@RequestMapping 테스트</title>
+</head>
+<body>
+<!--  @PostMapping -->
+<div>
+  <h4>http://localhost:8080/post/html</h4>
+  <form action="/post/html" method="post">
+    <table style="border: 1px solid #383434;">
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <button type="submit">전송</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+
+<div>
+  <h4>http://localhost:8080/post/html/{msg}</h4>
+  <form action="/post/html/안녕하세요/" method="post">
+    <table style="border: 1px solid #383434;">
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <button type="submit">전송</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+
+<div>
+  <h4>http://localhost:8080/post/txt</h4>
+  <form action="/post/txt?msg=홍길동" method="post">
+    <table style="border: 1px solid #383434;">
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <button type="submit">전송</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+
+<div>
+  <h4>http://localhost:8080/post/json</h4>
+  <form action="/post/json" method="post">
+    <table style="border: 1px solid #383434;">
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <button type="submit">전송</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+
+<div>
+  <h4>http://localhost:8080/post/json</h4>
+  <form action="/post/json" method="post">
+    <table style="border: 1px solid #383434;">
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <button type="submit">전송</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+
+<div>
+  <h4>http://localhost:8080/post/dto</h4>
+  <form action="/post/dto" method="post">
+    <table style="border: 1px solid #383434;">
+      <tr>
+        <td>이름</td>
+        <td><input type="text" name="name" value="홍길동" /></td>
+      </tr>
+      <tr>
+        <td>핸드폰</td>
+        <td><input type="text" name="phone" value="010-8888-88888" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <button type="submit">전송</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+
+<div>
+  <h4>http://localhost:8080/post/dto-model</h4>
+  <form action="/post/dto-model" method="post">
+    <table style="border: 1px solid #383434;">
+      <tr>
+        <td>이름</td>
+        <td><input type="text" name="name" value="홍길동" /></td>
+      </tr>
+      <tr>
+        <td>핸드폰</td>
+        <td><input type="text" name="phone" value="010-8888-88888" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <button type="submit">전송</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<!--  @RequestMapping RequestMethod.POST -->
+<div>
+  <h4>http://localhost:8080/req/dto</h4>
+  <form action="/req/dto" method="post">
+<!--  action="전달받을 url" method=(post|get)-->
+    <table style="border: 1px solid #383434;">
+      <tr>
+        <td>이름</td>
+        <td><input type="text" name="name" value="홍길동" /></td>
+      </tr>
+      <tr>
+        <td>핸드폰</td>
+        <td><input type="text" name="phone" value="010-8888-88888" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <button type="submit">전송</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+
+<div>
+  <h4>http://localhost:8080/post/dto-model</h4>
+  <form action="/req/dto-model" method="post">
+    <table style="border: 1px solid #383434;">
+      <tr>
+        <td>이름</td>
+        <td><input type="text" name="name" value="홍길동" /></td>
+      </tr>
+      <tr>
+        <td>핸드폰</td>
+        <td><input type="text" name="phone" value="010-8888-88888" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <button type="submit">전송</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+</body>
+</html>
+
+
+
