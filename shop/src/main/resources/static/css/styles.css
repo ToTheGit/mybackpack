@@ -237,9 +237,6 @@ sup {
 a {
   color: black;
 }
-a:hover {
-  color: #0a58ca;
-}
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -3950,7 +3947,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link.disabled {
-  color: #6c757d;
+
   pointer-events: none;
   cursor: default;
 }
@@ -3965,12 +3962,8 @@ textarea.form-control-lg {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
-  isolation: isolate;
-}
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+
   background-color: transparent;
   border-color: transparent;
 }
@@ -3994,7 +3987,6 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #0d6efd;
 }
 
 .nav-fill > .nav-link,
@@ -4441,9 +4433,6 @@ textarea.form-control-lg {
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.55);
 }
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
-}
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -4461,11 +4450,7 @@ textarea.form-control-lg {
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.55);
 }
-.navbar-light .navbar-text a,
-.navbar-light .navbar-text a:hover,
-.navbar-light .navbar-text a:focus {
-  color: rgba(0, 0, 0, 0.9);
-}
+
 
 .navbar-dark .navbar-brand {
   color: #fff;
@@ -4475,9 +4460,6 @@ textarea.form-control-lg {
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.55);
-}
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
@@ -4496,11 +4478,7 @@ textarea.form-control-lg {
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.55);
 }
-.navbar-dark .navbar-text a,
-.navbar-dark .navbar-text a:hover,
-.navbar-dark .navbar-text a:focus {
-  color: #fff;
-}
+
 
 .card {
   position: relative;
