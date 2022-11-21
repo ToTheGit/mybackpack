@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout1}">
+<body>
+<div layout:fragment="content">
+  <form>
+    <h1>마이페이지</h1>
+    <table border="1">
+      <tr>
+        <td>이름</td>
+        <td><div th:text="${member.name}"></div></td>
+      </tr>
+      <tr>
+        <td>이메일</td>
+        <td><div th:text="${#authentication.name}"></div></td>
+      </tr>
+      <tr>
+        <td>주소</td>
+        <td><div th:text="${member.address}"></div></td>
+      </tr>
+      <tr>
+        <td>권한</td>
+        <td><div th:text="${#authentication.getAuthorities()}"></div></td>
+      </tr>
+    </table>
+    <div th:text="${member.name}"></div>
+    <div th:text="${member.address}"></div>
+    ${member.name}
+    ${member.address}
+  <p th:text="${#authentication.name}"></p>
+  <p th:text="${#authentication.getAuthorities()}"></p>
+  </form>
+</div>
+</body>
+</html>
