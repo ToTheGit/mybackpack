@@ -5,32 +5,26 @@
 <body>
 <div layout:fragment="content">
   <form>
-    <h1>마이페이지</h1>
-    <table border="1">
+
+    <table class="table table-dark">
+      <thead>
       <tr>
-        <td>이름</td>
-        <td><div th:text="${member.name}"></div></td>
+        <th>마이페이지</th>
       </tr>
+      </thead>
       <tr>
         <td>이메일</td>
         <td><div th:text="${#authentication.name}"></div></td>
-      </tr>
-      <tr>
-        <td>주소</td>
-        <td><div th:text="${member.address}"></div></td>
       </tr>
       <tr>
         <td>권한</td>
         <td><div th:text="${#authentication.getAuthorities()}"></div></td>
       </tr>
     </table>
-    <div th:text="${member.name}"></div>
-    <div th:text="${member.address}"></div>
-    ${member.name}
-    ${member.address}
-  <p th:text="${#authentication.name}"></p>
-  <p th:text="${#authentication.getAuthorities()}"></p>
+    <div class="d-inline p-2 text-bg-primary">d-inline</div>
+    <div class="d-inline p-2 text-bg-dark">d-inline</div>
   </form>
+
 </div>
 </body>
 </html>

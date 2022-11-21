@@ -12,8 +12,13 @@ body {
     right: 0;
     bottom: 0;
     width: 100%;
-    padding: 15px 0;
+    padding: 0;
     text-align: center;
+}
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 .content{
     margin-bottom:100px;

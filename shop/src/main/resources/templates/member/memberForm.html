@@ -50,7 +50,7 @@
       <p th:if="${#fields.hasErrors('address')}" th:errors="*{address}" class="fieldError">Incorrect data</p>
     </div>
     <div style="text-align: center">
-      <button type="submit" class="btn btn-primary" style="">Submit</button>
+      <button type="submit" class="btn btn-dark" style="">Submit</button>
     </div>
     <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
     <!--인풋타입 히든 항상 넣어줘야한다. 서버발급 토큰 유효하면 하고 유효하지않으면 거부.-->
