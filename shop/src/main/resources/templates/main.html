@@ -4,6 +4,189 @@
       layout:decorate="~{layouts/layout1}">
 
 <div layout:fragment="content">
-  <h1>메인페이지입니다.</h1>
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+<!--                이태원-->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://data.seoul.go.kr/SeoulRtd/images/hotspot/%EC%9D%B4%ED%83%9C%EC%9B%90%20%EA%B4%80%EA%B4%91%ED%8A%B9%EA%B5%AC.jpg" alt="..."/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">이태원 관광특구</h5>
+
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" sec:authorize="isAuthenticated()" href="/contents/Itaewon">방문하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--                강남역-->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://data.seoul.go.kr/SeoulRtd/images/hotspot/%EA%B0%95%EB%82%A8%EC%97%AD.jpg"
+                             alt="..."/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">강남역</h5>
+
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" sec:authorize="isAuthenticated()"
+                                                        href="/contents/Gangnam">방문하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--                여의도-->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://data.seoul.go.kr/SeoulRtd/images/hotspot/%EC%97%AC%EC%9D%98%EB%8F%84.jpg"
+                             alt="..."/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">여의도</h5>
+                                여의도 한강공원<br>
+                                The Hyundai & IFC MALL
+
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                                        href="/contents/Yeouido" sec:authorize="isAuthenticated()">방문하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                잠실-->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://data.seoul.go.kr/SeoulRtd/images/hotspot/%EC%9E%A0%EC%8B%A4%20%EA%B4%80%EA%B4%91%ED%8A%B9%EA%B5%AC.jpg"
+                             alt="..."/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">잠실 관광특구</h5>
+                                롯데월드 롯데타워
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                                        href="/contents/Jamsil" sec:authorize="isAuthenticated()">방문하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                반포한강공원-->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://data.seoul.go.kr/SeoulRtd/images/hotspot/%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90.jpg"
+                             alt="..."/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">반포 한강공원</h5>
+                                무지개분수<br>
+                                세비둥둥섬
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                                        href="/contents/Banpo" sec:authorize="isAuthenticated()">방문하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                뚝섬한강공원-->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://data.seoul.go.kr/SeoulRtd/images/hotspot/%EB%9A%9D%EC%84%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90.jpg"
+                             alt="..."/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">뚝섬 한강공원</h5>
+
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                                        href="/contents/Ttukseom" sec:authorize="isAuthenticated()">방문하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://data.seoul.go.kr/SeoulRtd/images/hotspot/%EB%A7%9D%EC%9B%90%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90.jpg"
+                             alt="..."/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">망원 한강공원</h5>
+
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                                        href="/contents/Mangwon" sec:authorize="isAuthenticated()">방문하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://data.seoul.go.kr/SeoulRtd/images/hotspot/%EC%84%9C%EC%9A%B8%EC%88%B2%EA%B3%B5%EC%9B%90.jpg"
+                             alt="..."/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">서울숲 공원</h5>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                                        href="/contents/Seoulforest" sec:authorize="isAuthenticated()">방문하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    </section>
 </div>
 </html>

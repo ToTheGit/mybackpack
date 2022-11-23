@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout1}">
+<body>
+<div layout:fragment="content">
+    <h2>실시간 서울숲 공원 혼잡도</h2>
+
+    <!--    <h3>Example: 20220101</h3>-->
+    <!--    <form method="POST" action="/api">-->
+    <!--        <input type="text" name="date" th:value="${date}"/>-->
+    <!--        <input type="submit" value="CLick"/>-->
+    <!--    </form>-->
+
+    <iframe src="https://data.seoul.go.kr/SeoulRtd/?hotspotNm=%EC%84%9C%EC%9A%B8%EC%88%B2%EA%B3%B5%EC%9B%90&y=37.54369262152499&x=127.0386028289795"
+            width="100%" height="1000px" style="border:1px;" allowfullscreen=""></iframe>
+
+
+</div>
+</body>
+</html>

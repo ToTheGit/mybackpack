@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout1}">
+<body>
+<div layout:fragment="content">
+    <h2>실시간 망원 한강공원 혼잡도</h2>
+
+    <!--    <h3>Example: 20220101</h3>-->
+    <!--    <form method="POST" action="/api">-->
+    <!--        <input type="text" name="date" th:value="${date}"/>-->
+    <!--        <input type="submit" value="CLick"/>-->
+    <!--    </form>-->
+
+    <iframe src="https://data.seoul.go.kr/SeoulRtd/?hotspotNm=%EB%A7%9D%EC%9B%90%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90&y=37.55250491995003&x=126.899273050949"
+            width="100%" height="1000px" style="border:1px;" allowfullscreen=""></iframe>
+
+
+</div>
+</body>
+</html>

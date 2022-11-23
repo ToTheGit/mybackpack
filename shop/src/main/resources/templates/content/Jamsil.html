@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout1}">
+<body>
+<div layout:fragment="content">
+    <h2>실시간 잠실 관광특구</h2>
+
+    <!--    <h3>Example: 20220101</h3>-->
+    <!--    <form method="POST" action="/api">-->
+    <!--        <input type="text" name="date" th:value="${date}"/>-->
+    <!--        <input type="submit" value="CLick"/>-->
+    <!--    </form>-->
+
+    <iframe src="https://data.seoul.go.kr/SeoulRtd/?hotspotNm=%EC%9E%A0%EC%8B%A4%20%EA%B4%80%EA%B4%91%ED%8A%B9%EA%B5%AC&y=37.51619365602682&x=127.11130142211915"
+            width="100%" height="1000px" style="border:1px;" allowfullscreen=""></iframe>
+
+
+</div>
+</body>
+</html>
