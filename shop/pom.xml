@@ -13,6 +13,17 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>shop</name>
 	<description>shop project for Spring Boot</description>
+	<properties>
+		<java.version>11</java.version>
+		<!-- jar 배포용 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+		<!--main 함수가 있는 class 경로-->
+		<start-class>kr.ac.gachon.shop.ShopApplication</start-class>
+		<webapp.lib>${basedir}/src/lib</webapp.lib>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -47,6 +58,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.github.openfeign</groupId>
+			<artifactId>feign-soap</artifactId>
+			<version>10.11</version>
+		</dependency>
 		<!--querydsl 의존성 추가-->
 		<dependency>
 			<groupId>com.querydsl</groupId>
