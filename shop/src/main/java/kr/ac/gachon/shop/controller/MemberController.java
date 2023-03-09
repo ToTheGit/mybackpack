@@ -41,7 +41,7 @@ public class MemberController {
             model.addAttribute("errorMessage", e.getMessage());
             return "member/memberForm";
         }
-        return "index";
+        return "main";
     }
     @GetMapping(value = "/login")
     public String loginMember(){

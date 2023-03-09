@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
     @GetMapping("/")
     public String index(Model model){
-        return "index";
+        return "main";
     }
 }
